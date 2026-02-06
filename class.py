@@ -1,4 +1,4 @@
 class Mobile():
     pass
-m=Mobile()
-print(m)
+a=Mobile()
+print(a)
