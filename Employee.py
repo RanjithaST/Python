@@ -1,4 +1,5 @@
 class Employee:
+    companyName="DCL"
     def __init__(self):
         self.empName=None
         self.empID=None
@@ -14,3 +15,5 @@ print(emp.empName)
 print(emp.empID)
 emp1=Employee()
 print(emp1)
+print(Employee.companyName)
+print(emp1.companyName)#not recomended
