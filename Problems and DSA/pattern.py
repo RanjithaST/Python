@@ -122,11 +122,65 @@ def printPattern8(N):
          #   print(" ",end=" ")
         print(" ")
 printPattern8(5)
-
 '''
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
 '''
-def printPattern9()
-
+def printPattern9(N):
+    for i in range(N-1,-1,-1):
+        for j in range(N-i-1):
+            print(" ",end=" ")
+        for j in range(2*i+1):
+            print("*",end=" ")
+        print(" ")
+printPattern9(5)
+print("\n")
+        
+'''
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+'''
+printPattern8(5)
+def printPattern10(N):
+    for i in range(N-2,-1,-1):
+        for j in range(N-i-1):
+            print(" ",end=" ")
+        for j in range(2*i+1):
+            print("*",end=" ")
+        print(" ")
+printPattern10(5)
+        
+'''
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+'''
+def printPattern10(N):
+    for i in range(2*N-1): #10-1=9 rows(0...8)
+        if(i<N): #5<5 false
+            stars=i+1
+        else:
+            stars=(2*N)-i-1 #10-5-1=4 stars
+        for j in range(stars):
+            print("*",end=" ")
+        print(" ")
+printPattern10(5)
 
 
 
