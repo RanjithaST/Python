@@ -88,7 +88,15 @@ print(a)
 a.sort()
 a=a[::-1]
 print(a)
-
-
-
+#******************************************************************
+'''
+Accessing elements of loop
+'''
+a=[1,2,3,4,5]
+#direct
+for x in a:
+    print(x)
+#using index
+for i in range(len(a)):
+    print(a[i])
 
